@@ -4,15 +4,15 @@
     <title>ShakaCode</title>
     <description>We are a global team of developers and designers specializing in web applications built on top of Ruby on Rails and React.
 </description>
-    <link>http://www.shakacode.com/</link>
-    <atom:link href="http://www.shakacode.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 25 Sep 2015 22:55:49 -0300</pubDate>
-    <lastBuildDate>Fri, 25 Sep 2015 22:55:49 -0300</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 29 Sep 2015 15:04:55 -0300</pubDate>
+    <lastBuildDate>Tue, 29 Sep 2015 15:04:55 -0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Who Is ShakaCode?</title>
-        <description>&lt;p class=&quot;text-center&quot;&gt;&lt;img src=&quot;http://www.shakacode.com/assets/posts/2015/09/shaka-sign.png&quot; alt=&quot;Shaka Sign&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p class=&quot;text-center&quot;&gt;&lt;img src=&quot;http://localhost:4000/assets/posts/2015/09/shaka-sign.png&quot; alt=&quot;Shaka Sign&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This gesture is more than just a mere wave or thumbs up. The shaka is a symbol of the “Aloha spirit,” which is the coordination of the mind and spirit to think and exude good feelings to others.
 Megan Denny, &lt;a href=&quot;http://padi.com&quot;&gt;www.padi.com&lt;/a&gt;&lt;/p&gt;
@@ -147,11 +147,11 @@ DHH’s RailsConf 2014 keynote on “Writing Software” nicely summarizes this 
   &lt;p&gt;But that’s not the complete story. I’d be lying if I didn’t admit that there’s an element of selfishness at work here. I love computers and programming. I love it so much it borders on obsession. When I saw the movie Into The Wild, I was transfixed by the final note written into the margins of Dr. Zhivago by a doomed Christopher McCandless: “Happiness only real when shared.”&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://www.shakacode.com/assets/posts/2015/09/fanpage-header.jpg&quot; alt=&quot;Justin Surfing&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/posts/2015/09/fanpage-header.jpg&quot; alt=&quot;Justin Surfing&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 17 Sep 2015 23:14:15 -0300</pubDate>
-        <link>http://www.shakacode.com/2015/09/17/who-is-shaka-code.html</link>
-        <guid isPermaLink="true">http://www.shakacode.com/2015/09/17/who-is-shaka-code.html</guid>
+        <link>http://localhost:4000/2015/09/17/who-is-shaka-code.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/09/17/who-is-shaka-code.html</guid>
         
         
       </item>
