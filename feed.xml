@@ -6,8 +6,8 @@
 </description>
     <link>http://www.shakacode.com/</link>
     <atom:link href="http://www.shakacode.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 07 Oct 2015 14:45:07 -0300</pubDate>
-    <lastBuildDate>Wed, 07 Oct 2015 14:45:07 -0300</lastBuildDate>
+    <pubDate>Sun, 25 Oct 2015 17:32:42 -0300</pubDate>
+    <lastBuildDate>Sun, 25 Oct 2015 17:32:42 -0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -47,7 +47,7 @@ Megan Denny, &lt;a href=&quot;http://padi.com&quot;&gt;www.padi.com&lt;/a&gt;&lt
     &lt;p&gt;We love open source and helping others. There’s probably no movement that’s changed software in the past 10 years like open source. Open source is not just about creating some well known project, like Linux or Ruby on Rails. It’s about doing what you can in a system of freely sharing ideas and helping others. This might be writing blog articles, participating on Stack Overflow,or working on open source projects. We believe this open source philosophy complements the definition from Wikipedia of the shaka symbol: “Aloha Spirit”, a concept of friendship, understanding, compassion”&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;We almost all surf, and we all love to get outdoors and do fun, athletic things. In fact, Dylan met Justin from surfing in Maui, and Justin contacted Alex when he saw that his Facebook profile page featured a picture of him in Bali. Samnang does huge mountain bike rides around Cambodia. We want to structure our lives to pursue our passions, which is coding and doing fun sports like surfing.&lt;/p&gt;
+    &lt;p&gt;We almost all surf, and we all love to get outdoors and do fun, athletic things. In fact, Dylan met Justin from surfing in Maui, and Justin contacted Alex when he saw that his Facebook profile page featured a picture of him in Bali. Samnang does huge mountain bike rides around Cambodia. We want to structure our lives to pursue our passions, which is coding and doing fun sports like surfing. This is akin to how &lt;a href=&quot;https://vimeo.com/76063825&quot;&gt;37signals Works Remotely&lt;/a&gt;.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Part of loving code is viewing it as an art. It’s like creative writing. When you first see really beautiful code, what is it that you see that is special? It’s a bit like looking at a random page of an Ernest Hemingway novel and seeing clear, short sentences. Great software is written such that it’s simple and clear. It’s easy to read.&lt;/p&gt;
@@ -55,8 +55,11 @@ Megan Denny, &lt;a href=&quot;http://padi.com&quot;&gt;www.padi.com&lt;/a&gt;&lt
 &lt;/ol&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;“Beautiful code is similar to beautiful prose: Succinct, it has flow and rhythm, and it’s an expression of clear thinking that doesn’t jump around different layers of abstraction all the time” &lt;a href=&quot;https://www.simple-talk.com/opinion/geek-of-the-week/david-heinemeier-hansson-geek-of-the-week/&quot;&gt;David Heinemeier Hansson: Geek of the Week&lt;/a&gt;
-DHH’s RailsConf 2014 keynote on “Writing Software” nicely summarizes this philosophy: &lt;a href=&quot;https://www.youtube.com/watch?v=9LfmrkyP81M&quot;&gt;https://www.youtube.com/watch?v=9LfmrkyP81M&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;“Beautiful code is similar to beautiful prose: Succinct, it has flow and rhythm, and it’s an expression of clear thinking that doesn’t jump around different layers of abstraction all the time.” from the article &lt;a href=&quot;https://www.simple-talk.com/opinion/geek-of-the-week/david-heinemeier-hansson-geek-of-the-week/&quot;&gt;David Heinemeier Hansson: Geek of the Week&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;DHH’s &lt;a href=&quot;https://www.youtube.com/watch?v=9LfmrkyP81M&quot;&gt;RailsConf 2014 keynote on “Writing Software”&lt;/a&gt; nicely summarizes this philosophy.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://www.dish.com/dig/sports/why-one-of-the-best-athletes-in-the-world-refuses-to-compete/&quot;&gt;Thus, Shaka + Code embodies who we are!&lt;/a&gt;&lt;/p&gt;
@@ -91,6 +94,9 @@ DHH’s RailsConf 2014 keynote on “Writing Software” nicely summarizes this 
     &lt;p&gt;Our internal project epitomizes how want our client code to look. It’s sparkly, shiny, and fresh. It’s how we believe code should be written and how projects should be organized. It’s a living example of what we intend to do for our clients. There’s no better “training” or “documentation” than a living example of a real software project.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
+    &lt;p&gt;&lt;a name=&quot;fng-internal-project&quot;&gt;&lt;/a&gt; It’s fun to have our own project! Coding is our passion!&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
     &lt;p&gt;We intend to give back TONS to the open source community. And that requires “Extraction” rather than “Design” by itself. &lt;a href=&quot;http://rubyonrails.org/&quot;&gt;Ruby on Rails&lt;/a&gt; was an extraction of the 37Signals App, &lt;a href=&quot;https://basecamp.com/&quot;&gt;Basecamp&lt;/a&gt;, and &lt;a href=&quot;http://getbootstrap.com/&quot;&gt;Twitter Bootstrap&lt;/a&gt; was an extract of the UI framework used by Twitter. This article &lt;a href=&quot;http://littlehart.net/atthekeyboard/2007/08/14/extraction-vs-design/&quot;&gt;Extraction vs. Design&lt;/a&gt; nicely sums this up:&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
@@ -98,10 +104,6 @@ DHH’s RailsConf 2014 keynote on “Writing Software” nicely summarizes this 
 &lt;blockquote&gt;
   &lt;p&gt;David Heinemeier Hansson (the driving force behind Ruby on Rails) is a huge believer in using extractions as a method to add functionality to your projects, typically in the context of a framework. You need some particular functionality, you write it, and if it’s good enough you extract it from it’s original context and make it generic enough that it can be used by other people. You could also call this “building stuff you need” instead of “building stuff you think you might need”. It’s part of the whole YAGNI philosophy of programming, I guess.&lt;/p&gt;
 &lt;/blockquote&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;a name=&quot;fng-internal-project&quot;&gt;&lt;/a&gt; It’s fun to have our own project! Coding is our passion!&lt;/li&gt;
-&lt;/ol&gt;
 
 &lt;h2 id=&quot;our-internal-project-friends-and-guests&quot;&gt;Our Internal Project: Friends and Guests&lt;/h2&gt;
 
@@ -116,8 +118,8 @@ DHH’s RailsConf 2014 keynote on “Writing Software” nicely summarizes this 
 &lt;ol&gt;
   &lt;li&gt;&lt;strong&gt;Geography&lt;/strong&gt; and &lt;strong&gt;Time Zone&lt;/strong&gt;&lt;/li&gt;
   &lt;li&gt;All the normal stuff, like gender, race, age, tattoos, piercings, sexual preference, etc.&lt;/li&gt;
-  &lt;li&gt;Degrees and credentials. Justin has degrees from Harvard, UC Berkeley, as well as a CFA credential. However, based on my experience working with great software engineers, education is only one of many signals. In fact, education is less important than passion and great taste.&lt;/li&gt;
-  &lt;li&gt;Working remotely (that’s what we do!)&lt;/li&gt;
+  &lt;li&gt;Degrees and credentials. Justin has degrees from Harvard, UC Berkeley, as well as a &lt;a href=&quot;https://www.cfainstitute.org/programs/cfaprogram/Pages/index.aspx?WPID=Programs&amp;amp;PageName=Homepage&quot;&gt;CFA credential&lt;/a&gt;. However, based on his experience working with great software engineers, education is only one of many signals. In fact, education is less important than passion and great taste.&lt;/li&gt;
+  &lt;li&gt;Working remotely (that’s what we do!).&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;We do discriminate against:&lt;/p&gt;
@@ -133,11 +135,11 @@ DHH’s RailsConf 2014 keynote on “Writing Software” nicely summarizes this 
 
 &lt;h3 id=&quot;signals&quot;&gt;37 Signals&lt;/h3&gt;
 
-&lt;p&gt;Definitely listen to this interview of &lt;a href=&quot;http://5by5.tv/changelog/145&quot;&gt;David Heinemeier Hanson on The Changelog&lt;/a&gt; for some great thoughts on the influence of David and Ruby on Rails on the ShakaCode philosophy. &lt;a href=&quot;https://www.simple-talk.com/opinion/geek-of-the-week/david-heinemeier-hansson-geek-of-the-week/&quot;&gt;David Heinemeier Hansson: Geek of the Week&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Definitely listen to this interview of &lt;a href=&quot;http://5by5.tv/changelog/145&quot;&gt;David Heinemeier Hanson on The Changelog&lt;/a&gt; for some great thoughts on the influence of David and Ruby on Rails on the ShakaCode philosophy. Plus, see this article: &lt;a href=&quot;https://www.simple-talk.com/opinion/geek-of-the-week/david-heinemeier-hansson-geek-of-the-week/&quot;&gt;David Heinemeier Hansson: Geek of the Week&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;coding-horror&quot;&gt;Coding Horror&lt;/h3&gt;
 
-&lt;p&gt;I still remember reading &lt;a href=&quot;http://blog.codinghorror.com/about-me/&quot;&gt;Jeff Atwood’s&lt;/a&gt; book where he describe how creating a programming blog was the best thing he ever did, and how it led to &lt;a href=&quot;http://stackoverflow.com/&quot;&gt;Stack Overflow&lt;/a&gt; and now &lt;a href=&quot;http://www.discourse.org/&quot;&gt;discourse.org&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Justin still remembers reading &lt;a href=&quot;http://blog.codinghorror.com/about-me/&quot;&gt;Jeff Atwood’s&lt;/a&gt; book where he describe how creating a programming blog was the best thing he ever did, and how it led to &lt;a href=&quot;http://stackoverflow.com/&quot;&gt;Stack Overflow&lt;/a&gt; and now &lt;a href=&quot;http://www.discourse.org/&quot;&gt;discourse.org&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;aloha&quot;&gt;Aloha&lt;/h2&gt;
 
