@@ -4,10 +4,10 @@
     <title>ShakaCode</title>
     <description>We are a global team of developers and designers specializing in web applications built on top of Ruby on Rails and React.
 </description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 27 Nov 2015 21:38:36 -0800</pubDate>
-    <lastBuildDate>Fri, 27 Nov 2015 21:38:36 -0800</lastBuildDate>
+    <link>http://www.shakacode.com/</link>
+    <atom:link href="http://www.shakacode.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 27 Nov 2015 21:41:19 -0800</pubDate>
+    <lastBuildDate>Fri, 27 Nov 2015 21:41:19 -0800</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -25,7 +25,7 @@ Being famous?
 success. &lt;a href=&quot;https://www.facebook.com/jimmie.hepp2?fref=ts&quot;&gt;Jimmie Hepp&lt;/a&gt; took
 this picture just a couple days before I wrote this article.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/posts/2015/11/justin-surfing-offshore-winds-smiling.jpg&quot; alt=&quot;Justin Surfing Smiling&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.shakacode.com/assets/posts/2015/11/justin-surfing-offshore-winds-smiling.jpg&quot; alt=&quot;Justin Surfing Smiling&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Note, I said happiness is just a &lt;em&gt;part&lt;/em&gt; of success. Balance in life is key to
 success. While I have the means to spend all my time surfing, I’d find greater
@@ -93,7 +93,7 @@ have shared their perspectives on competition. Their advice correlates with my
 view that &lt;em&gt;collaboration and creativity&lt;/em&gt; will do more for your success than a
 stressful focus on competition.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/posts/2015/11/lemans2013.jpg&quot; alt=&quot;David Racing&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.shakacode.com/assets/posts/2015/11/lemans2013.jpg&quot; alt=&quot;David Racing&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;To quote &lt;a href=&quot;http://david.heinemeierhansson.com/&quot;&gt;David Heinemeier Hanson&lt;/a&gt; in
 &lt;a href=&quot;https://signalvnoise.com/posts/3977-i-dont-want-to-be-a-winner&quot;&gt;I don’t want to be a winner&lt;/a&gt;:&lt;/p&gt;
@@ -172,7 +172,7 @@ don’t work for such companies.&lt;/em&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;compete-against-yourself-only&quot;&gt;Compete Against Yourself Only&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/posts/2015/11/Laird_Hamilton_Teahupoo_2000.jpg&quot; alt=&quot;Laird Competing Against Himself&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.shakacode.com/assets/posts/2015/11/Laird_Hamilton_Teahupoo_2000.jpg&quot; alt=&quot;Laird Competing Against Himself&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Laird_Hamilton&quot;&gt;Laird&lt;/a&gt; is as much a legend in the
 surfing world as David is in the programming and startup worlds. He could have
@@ -266,7 +266,7 @@ philosophy, see &lt;a href=&quot;/2015/09/17/who-is-shaka-code.html&quot;&gt;Who
 &lt;div id=&quot;discourse-comments&quot;&gt;&lt;/div&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
   var discourseUrl = &quot;http://forum.shakacode.com/&quot;,
-      discourseEmbedUrl = &quot;http://localhost:4000/2015/11/26/success-the-shakacode-way.html&quot;;
+      discourseEmbedUrl = &quot;http://www.shakacode.com/2015/11/26/success-the-shakacode-way.html&quot;;
   (function() {
     var d = document.createElement(&#39;script&#39;); d.type = &#39;text/javascript&#39;; d.async = true;
       d.src = discourseUrl + &#39;javascripts/embed.js&#39;;
@@ -276,15 +276,15 @@ philosophy, see &lt;a href=&quot;/2015/09/17/who-is-shaka-code.html&quot;&gt;Who
 
 </description>
         <pubDate>Thu, 26 Nov 2015 14:41:38 -0800</pubDate>
-        <link>http://localhost:4000/2015/11/26/success-the-shakacode-way.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2015/11/26/success-the-shakacode-way.html</guid>
+        <link>http://www.shakacode.com/2015/11/26/success-the-shakacode-way.html</link>
+        <guid isPermaLink="true">http://www.shakacode.com/2015/11/26/success-the-shakacode-way.html</guid>
         
         
       </item>
     
       <item>
         <title>Who Is ShakaCode?</title>
-        <description>&lt;p class=&quot;text-center&quot;&gt;&lt;img src=&quot;http://localhost:4000/assets/posts/2015/09/shaka-sign.png&quot; alt=&quot;Shaka Sign&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p class=&quot;text-center&quot;&gt;&lt;img src=&quot;http://www.shakacode.com/assets/posts/2015/09/shaka-sign.png&quot; alt=&quot;Shaka Sign&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;This gesture is more than just a mere wave or thumbs up. The shaka is a symbol
@@ -426,11 +426,11 @@ and exude good feelings to others. (by Megan Denny, www.padi.com)&lt;/p&gt;
   &lt;p&gt;But that’s not the complete story. I’d be lying if I didn’t admit that there’s an element of selfishness at work here. I love computers and programming. I love it so much it borders on obsession. When I saw the movie Into The Wild, I was transfixed by the final note written into the margins of Dr. Zhivago by a doomed Christopher McCandless: “Happiness only real when shared.”&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/posts/2015/09/fanpage-header.jpg&quot; alt=&quot;Justin Surfing&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.shakacode.com/assets/posts/2015/09/fanpage-header.jpg&quot; alt=&quot;Justin Surfing&quot; /&gt;&lt;/p&gt;
 &lt;div id=&quot;discourse-comments&quot;&gt;&lt;/div&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
   var discourseUrl = &quot;http://forum.shakacode.com/&quot;,
-      discourseEmbedUrl = &quot;http://localhost:4000/2015/09/17/who-is-shaka-code.html&quot;;
+      discourseEmbedUrl = &quot;http://www.shakacode.com/2015/09/17/who-is-shaka-code.html&quot;;
   (function() {
     var d = document.createElement(&#39;script&#39;); d.type = &#39;text/javascript&#39;; d.async = true;
       d.src = discourseUrl + &#39;javascripts/embed.js&#39;;
@@ -440,8 +440,8 @@ and exude good feelings to others. (by Megan Denny, www.padi.com)&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 17 Sep 2015 19:14:15 -0700</pubDate>
-        <link>http://localhost:4000/2015/09/17/who-is-shaka-code.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2015/09/17/who-is-shaka-code.html</guid>
+        <link>http://www.shakacode.com/2015/09/17/who-is-shaka-code.html</link>
+        <guid isPermaLink="true">http://www.shakacode.com/2015/09/17/who-is-shaka-code.html</guid>
         
         
       </item>
