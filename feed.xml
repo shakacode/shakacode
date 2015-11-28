@@ -4,28 +4,28 @@
     <title>ShakaCode</title>
     <description>We are a global team of developers and designers specializing in web applications built on top of Ruby on Rails and React.
 </description>
-    <link>http://www.shakacode.com/</link>
-    <atom:link href="http://www.shakacode.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 27 Nov 2015 20:06:55 -0300</pubDate>
-    <lastBuildDate>Fri, 27 Nov 2015 20:06:55 -0300</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 27 Nov 2015 21:28:28 -0800</pubDate>
+    <lastBuildDate>Fri, 27 Nov 2015 21:28:28 -0800</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Success the ShakaCode Way!</title>
-        <description>&lt;p&gt;It’s Thanksgiving today! I’m taking a few minutes put down a few thoughts that I
-hope will bring you, your family, and your friends “success” in the coming year.&lt;/p&gt;
+        <description>&lt;p&gt;It’s Thanksgiving today! I’m taking a few minutes to put down a few thoughts
+that I hope will bring you, your family, and your friends “success” in the
+coming year.&lt;/p&gt;
 
 &lt;p&gt;Success is ambiguous. Is it
 &lt;a href=&quot;https://medium.com/@dhh/the-day-i-became-a-millionaire-55d7dc4d8293#.80b2anf29&quot;&gt;being a millionaire&lt;/a&gt;?
 Being famous?
 &lt;a href=&quot;https://medium.com/@dhh/i-don-t-want-to-be-a-winner-9858d0c32fa0#.7mwrh5asb&quot;&gt;Winning competitions&lt;/a&gt;?&lt;/p&gt;
 
-&lt;p&gt;I’d say it’s happiness! Here’s a picture of &lt;em&gt;part&lt;/em&gt; of my definition of success,
-taken just a couple days ago:&lt;/p&gt;
+&lt;p&gt;I’d say it’s happiness! This image captures &lt;em&gt;part&lt;/em&gt; of my definition of
+success. &lt;a href=&quot;https://www.facebook.com/jimmie.hepp2?fref=ts&quot;&gt;Jimmie Hepp&lt;/a&gt; took
+this picture just a couple days before I wrote this article.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://www.shakacode.com/assets/posts/2015/11/justin-surfing-offshore-winds-smiling.jpg&quot; alt=&quot;Justin Surfing Smiling&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Photo Credit: &lt;a href=&quot;https://www.facebook.com/jimmie.hepp2?fref=ts&quot;&gt;Jimmie Hepp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/posts/2015/11/justin-surfing-offshore-winds-smiling.jpg&quot; alt=&quot;Justin Surfing Smiling&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Note, I said happiness is just a &lt;em&gt;part&lt;/em&gt; of success. Balance in life is key to
 success. While I have the means to spend all my time surfing, I’d find greater
@@ -47,6 +47,8 @@ wasted commuting, or want to live at a ski resort or a remote surf break –
 that’s all OK. Educational background, ethnicity, nationality, gender, age, etc.
 all do not matter to us. All of our team members share this philosophy and this
 is how we &lt;a href=&quot;http://www.shakacode.com/about/#work-with-us&quot;&gt;find new team members&lt;/a&gt;.&lt;/p&gt;
+
+&lt;!--more--&gt;
 
 &lt;h2 id=&quot;an-inspiring-story&quot;&gt;An Inspiring Story&lt;/h2&gt;
 &lt;p&gt;One of my first hires, Dylan, exemplifies ShakaCode’s values.&lt;/p&gt;
@@ -91,7 +93,7 @@ have shared their perspectives on competition. Their advice correlates with my
 view that &lt;em&gt;collaboration and creativity&lt;/em&gt; will do more for your success than a
 stressful focus on competition.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://www.shakacode.com/assets/posts/2015/11/lemans2013.jpg&quot; alt=&quot;David Racing&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/posts/2015/11/lemans2013.jpg&quot; alt=&quot;David Racing&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;To quote &lt;a href=&quot;http://david.heinemeierhansson.com/&quot;&gt;David Heinemeier Hanson&lt;/a&gt; in
 &lt;a href=&quot;https://signalvnoise.com/posts/3977-i-dont-want-to-be-a-winner&quot;&gt;I don’t want to be a winner&lt;/a&gt;:&lt;/p&gt;
@@ -170,7 +172,7 @@ don’t work for such companies.&lt;/em&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;compete-against-yourself-only&quot;&gt;Compete Against Yourself Only&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://www.shakacode.com/assets/posts/2015/11/Laird_Hamilton_Teahupoo_2000.jpg&quot; alt=&quot;Laird Competing Against Himself&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/posts/2015/11/Laird_Hamilton_Teahupoo_2000.jpg&quot; alt=&quot;Laird Competing Against Himself&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Laird_Hamilton&quot;&gt;Laird&lt;/a&gt; is as much a legend in the
 surfing world as David is in the programming and startup worlds. He could have
@@ -264,7 +266,7 @@ philosophy, see &lt;a href=&quot;/2015/09/17/who-is-shaka-code.html&quot;&gt;Who
 &lt;div id=&quot;discourse-comments&quot;&gt;&lt;/div&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
   var discourseUrl = &quot;http://forum.shakacode.com/&quot;,
-      discourseEmbedUrl = &quot;http://www.shakacode.com/2015/11/26/success-the-shakacode-way.html&quot;;
+      discourseEmbedUrl = &quot;http://localhost:4000/2015/11/26/success-the-shakacode-way.html&quot;;
   (function() {
     var d = document.createElement(&#39;script&#39;); d.type = &#39;text/javascript&#39;; d.async = true;
       d.src = discourseUrl + &#39;javascripts/embed.js&#39;;
@@ -273,25 +275,30 @@ philosophy, see &lt;a href=&quot;/2015/09/17/who-is-shaka-code.html&quot;&gt;Who
 &lt;/script&gt;
 
 </description>
-        <pubDate>Thu, 26 Nov 2015 19:41:38 -0300</pubDate>
-        <link>http://www.shakacode.com/2015/11/26/success-the-shakacode-way.html</link>
-        <guid isPermaLink="true">http://www.shakacode.com/2015/11/26/success-the-shakacode-way.html</guid>
+        <pubDate>Thu, 26 Nov 2015 14:41:38 -0800</pubDate>
+        <link>http://localhost:4000/2015/11/26/success-the-shakacode-way.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/11/26/success-the-shakacode-way.html</guid>
         
         
       </item>
     
       <item>
         <title>Who Is ShakaCode?</title>
-        <description>&lt;p class=&quot;text-center&quot;&gt;&lt;img src=&quot;http://www.shakacode.com/assets/posts/2015/09/shaka-sign.png&quot; alt=&quot;Shaka Sign&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p class=&quot;text-center&quot;&gt;&lt;img src=&quot;http://localhost:4000/assets/posts/2015/09/shaka-sign.png&quot; alt=&quot;Shaka Sign&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;This gesture is more than just a mere wave or thumbs up. The shaka is a symbol of the “Aloha spirit,” which is the coordination of the mind and spirit to think and exude good feelings to others.
-Megan Denny, &lt;a href=&quot;http://padi.com&quot;&gt;www.padi.com&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;This gesture is more than just a mere wave or thumbs up. The shaka is a symbol
+of the “Aloha spirit,” which is the coordination of the mind and spirit to think
+and exude good feelings to others. (by Megan Denny, www.padi.com)&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;by Justin Gordon with help from the ShakaCode Team, September, 2015&lt;/p&gt;
 
 &lt;h2 id=&quot;a-classoffset-y-anchor-namewho-is-shaka-codea-who-is-shakacode&quot;&gt;&lt;a class=&quot;offset-y-anchor&quot; name=&quot;who-is-shaka-code&quot;&gt;&lt;/a&gt; Who is ShakaCode?&lt;/h2&gt;
 
 &lt;p&gt;It’s the global web development software consultancy and product company started by Justin Gordon, AKA “railsonmaui” in the Ruby on Rails world. We’re focused on what we believe to be the best technologies for web development. Today, those are Ruby on Rails and React. But it’s not just us, we like to think that it’s the larger WE in the open source community that loves collaborating on beautiful code.&lt;/p&gt;
+
+&lt;!--more--&gt;
 
 &lt;h2 id=&quot;why-change-the-name-from-rails-on-maui&quot;&gt;Why Change the Name from “Rails on Maui?”&lt;/h2&gt;
 
@@ -419,11 +426,11 @@ Megan Denny, &lt;a href=&quot;http://padi.com&quot;&gt;www.padi.com&lt;/a&gt;&lt
   &lt;p&gt;But that’s not the complete story. I’d be lying if I didn’t admit that there’s an element of selfishness at work here. I love computers and programming. I love it so much it borders on obsession. When I saw the movie Into The Wild, I was transfixed by the final note written into the margins of Dr. Zhivago by a doomed Christopher McCandless: “Happiness only real when shared.”&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://www.shakacode.com/assets/posts/2015/09/fanpage-header.jpg&quot; alt=&quot;Justin Surfing&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/posts/2015/09/fanpage-header.jpg&quot; alt=&quot;Justin Surfing&quot; /&gt;&lt;/p&gt;
 &lt;div id=&quot;discourse-comments&quot;&gt;&lt;/div&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
   var discourseUrl = &quot;http://forum.shakacode.com/&quot;,
-      discourseEmbedUrl = &quot;http://www.shakacode.com/2015/09/17/who-is-shaka-code.html&quot;;
+      discourseEmbedUrl = &quot;http://localhost:4000/2015/09/17/who-is-shaka-code.html&quot;;
   (function() {
     var d = document.createElement(&#39;script&#39;); d.type = &#39;text/javascript&#39;; d.async = true;
       d.src = discourseUrl + &#39;javascripts/embed.js&#39;;
@@ -432,9 +439,9 @@ Megan Denny, &lt;a href=&quot;http://padi.com&quot;&gt;www.padi.com&lt;/a&gt;&lt
 &lt;/script&gt;
 
 </description>
-        <pubDate>Thu, 17 Sep 2015 23:14:15 -0300</pubDate>
-        <link>http://www.shakacode.com/2015/09/17/who-is-shaka-code.html</link>
-        <guid isPermaLink="true">http://www.shakacode.com/2015/09/17/who-is-shaka-code.html</guid>
+        <pubDate>Thu, 17 Sep 2015 19:14:15 -0700</pubDate>
+        <link>http://localhost:4000/2015/09/17/who-is-shaka-code.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/09/17/who-is-shaka-code.html</guid>
         
         
       </item>
