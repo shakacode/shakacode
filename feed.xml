@@ -6,9 +6,122 @@
 </description>
     <link>http://www.shakacode.com/</link>
     <atom:link href="http://www.shakacode.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 28 Nov 2015 17:45:06 -0800</pubDate>
-    <lastBuildDate>Sat, 28 Nov 2015 17:45:06 -0800</lastBuildDate>
+    <pubDate>Tue, 26 Jan 2016 23:01:18 -0800</pubDate>
+    <lastBuildDate>Tue, 26 Jan 2016 23:01:18 -0800</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>The React on Rails Doctrine</title>
+        <description>&lt;p&gt;By Justin Gordon, January 26, 2016&lt;/p&gt;
+
+&lt;p&gt;This document is an extension and complement to &lt;a href=&quot;http://rubyonrails.org/doctrine/&quot;&gt;The Rails Doctrine&lt;/a&gt;. If you haven’t read that document, I suggest you do so first.&lt;/p&gt;
+
+&lt;p&gt;As stated in the &lt;a href=&quot;../README.md&quot;&gt;React on Rails README&lt;/a&gt;, the project objective is to provide an opinionated and optimal framework for integrating &lt;strong&gt;Ruby on Rails&lt;/strong&gt; with modern JavaScript tooling and libraries. When considering what goes into &lt;strong&gt;react_on_rails&lt;/strong&gt;, we ask ourselves, is the functionality related to the intersection of using Rails and with modern JavaScript? A good example is view helper integration of React components on a Rails view. If the answer is yes, then the functionality belongs right here. In other cases, we’re releasing separate npm packages or Ruby gems. For example, we needed an easy way to integrate &lt;a href=&quot;http://getbootstrap.com/&quot;&gt;Twitter Bootstrap&lt;/a&gt; with Webpack, and we released the &lt;a href=&quot;https://github.com/shakacode/bootstrap-loader/&quot;&gt;npm bootstrap-loader&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Besides the project objective, let’s stick with the “Rails Doctrine” and keep the following in mind.&lt;/p&gt;
+
+&lt;h2 id=&quot;optimize-for-programmer-happiness&quot;&gt;Optimize for Programmer Happiness&lt;/h2&gt;
+&lt;p&gt;The React on Rails setup provides several key components related to front-end developer happiness:&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gaearon.github.io/react-hot-loader/&quot;&gt;Hot reloading of both JavaScript and CSS&lt;/a&gt;, via the &lt;a href=&quot;https://webpack.github.io/docs/webpack-dev-server.html&quot;&gt;webpack dev server&lt;/a&gt;. This works for both using an &lt;a href=&quot;http://expressjs.com/&quot;&gt;express server&lt;/a&gt; to load stubs for the ajax requests, as well as using a live Rails server. &lt;strong&gt;Oh yes&lt;/strong&gt;, your Rails server can do hot reloading!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/css-modules/webpack-demo&quot;&gt;CSS modules&lt;/a&gt; which remove the madness of a global namespace for CSS. We organize our CSS (Sass, actually) right next to our JavaScript React component files. This means no more creating long class names to ensure that CSS picks up the right styles.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://es6-features.org/#Constants&quot;&gt;ES6 JavaScript&lt;/a&gt; is a great language for client side coding, much more so than Ruby due to the asynchronous nature of UI programming.&lt;/li&gt;
+  &lt;li&gt;JavaScript libraries and tooling work better in the native node way, rather than via some aspect of Sprockets and the Rails Asset Pipeline. We find way less frustration this way, especially from being able to get the latest advances with the rest of the JavaScript community. Why complicated beautiful JavaScript tooling Rails asset pipeline complexity?&lt;/li&gt;
+  &lt;li&gt;We want our JavaScript from npm. Getting JavaScript from rubygems.org is comparatively frustrating.&lt;/li&gt;
+  &lt;li&gt;Happiness for us is actively participating in open source, so we want to be where the action is, which is with the npm libraries on github.com.&lt;/li&gt;
+  &lt;li&gt;You can get set up on React on Rails &lt;strong&gt;FAST&lt;/strong&gt; using our application generator.&lt;/li&gt;
+  &lt;li&gt;By placing all client-side development inside of the &lt;code&gt;/client&lt;/code&gt; directory, pure JavaScript developers can productively do development separate from Rails. Instead of Rails APIs, stub APIs on an express server can provide a simple backend, allowing for rapid iteration of UI prototypes.&lt;/li&gt;
+  &lt;li&gt;Just because we’re not relying on the Rails asset pipeline for ES6 conversion does not mean that we’re deploying Rails apps in any different way. We still use the asset pipeline to include our Webpack compiled JavaScript. This only requires a few small modifications, as explained in our doc &lt;a href=&quot;additional_reading/heroku_deployment.md&quot;&gt;Heroku Deployment&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;convention-over-configuration&quot;&gt;Convention over Configuration&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;React on Rails has taken the hard work out of figuring out the JavaScript tooling that works best with Rails. Not only could you spend lots of time researching different tooling, but then you’d have to figure out how to splice it all together. This is where a lot of “JavaScript fatigue” comes from. The following keep the code clean and consistent:&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;coding-style/style.md&quot;&gt;Style Guide&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;coding-style/linters.md&quot;&gt;linters&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;recommended-project-structure.md&quot;&gt;Recommended Project Structure&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We’re big believers in this quote from the Rails Doctrine:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The same goes even when you understand how all the pieces go together. When there’s an obvious next step for every change, we can scoot through the many parts of an application that is the same or very similar to all the other applications that went before it. A place for everything and everything in its place. Constraints liberate even the most able minds.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;the-menu-is-omakase&quot;&gt;The Menu Is Omakase&lt;/h2&gt;
+&lt;p&gt;Here’s the chef’s selection from the React on Rails community:&lt;/p&gt;
+
+&lt;h3 id=&quot;libraries&quot;&gt;Libraries&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://getbootstrap.com/&quot;&gt;Bootstrap&lt;/a&gt;, loaded from &lt;a href=&quot;https://github.com/shakacode/bootstrap-loader/&quot;&gt;bootstrap-loader&lt;/a&gt;. Common UI styles.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lodash.com/&quot;&gt;Lodash&lt;/a&gt;: Swiss army knife of utilities.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://facebook.github.io/react/&quot;&gt;React&lt;/a&gt;: UI components.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/rackt/react-router&quot;&gt;React-Router&lt;/a&gt;: Provider of deep links for client-side application.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/rackt/redux&quot;&gt;Redux&lt;/a&gt;: Flux implementation (aka “state container”).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;javascript-tooling&quot;&gt;JavaScript Tooling&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://babeljs.io/&quot;&gt;Babel&lt;/a&gt;: Transpiler for ES6 into ES5 and much more.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://eslint.org/&quot;&gt;EsLint&lt;/a&gt; and &lt;a href=&quot;http://jscs.info/&quot;&gt;Jsrc&lt;/a&gt;: JavaScript linters.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://webpack.github.io/&quot;&gt;Webpack&lt;/a&gt;: Generator of deployment assets and provider of hot module reloading.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;By having a common set of tools, we can discuss what we should or shouldn’t be using. Thus, this takes out the “JavaScript Fatigue” from having too many unclear choices in the JavaScript world.&lt;/p&gt;
+
+&lt;p&gt;By the way, we’re &lt;em&gt;not&lt;/em&gt; omakase for standard Rails. That would be CoffeeScript. However, the Rails Doctrine makes it clear that non-standard menu choices are certainly welcome!&lt;/p&gt;
+
+&lt;h2 id=&quot;no-one-paradigm&quot;&gt;No One Paradigm&lt;/h2&gt;
+&lt;p&gt;React on Rails fits into the “No One Paradigm” of the Rails ecosystem from the perspective that it rocks for client side development with Rails, even though it’s a totally different language than the server code written in Ruby.&lt;/p&gt;
+
+&lt;h2 id=&quot;exalt-beautiful-code&quot;&gt;Exalt Beautiful Code&lt;/h2&gt;
+&lt;p&gt;ES5 was ugly. ES6 is beautiful. React is beautiful. Client side code written with React plus Redux, fully linted with the ShakaCode linters, and organized per our recommended project structure is beautiful. Don’t take our word for it. Take a look at the component sample code in the &lt;a href=&quot;https://github.com/shakacode/react-webpack-rails-tutorial/tree/master/client/app/bundles/comments&quot;&gt;react-webpack-rails-tutorial sample code&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;value-integrated-systems&quot;&gt;Value Integrated Systems&lt;/h2&gt;
+&lt;p&gt;Assuming that you’re building the type of app that’s a good fit for Rails (document/database based with lots of business rules), the tight integration of modern JavaScript with React on top of Ruby on Rails is better than building a pure client side app and separate microservices. Here’s why:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Via React on Rails, we can seamlessly integrate React UI components with Rails.&lt;/li&gt;
+  &lt;li&gt;Tight integration allows for trivial set up of server rendering of React on top of Rails, complete with support for fragment caching of the server rendered HTML, and integration with &lt;a href=&quot;https://github.com/rails/turbolinks&quot;&gt;Turbolinks&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Tight integration allows mixing and matching Rails pages with React driven pages, even on the same page. Not every part of a UI requires the high fidelity achievable using React. Many existing apps may have hundreds of standards Rails forms. Support for mixing and matching React with Rails forms provides the best of both worlds.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;progress-over-stability&quot;&gt;Progress over Stability&lt;/h2&gt;
+&lt;p&gt;React on Rails will maintain an active pace of development, to keep up with:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Community suggestions.&lt;/li&gt;
+  &lt;li&gt;New client side tooling, libraries, and techniques.&lt;/li&gt;
+  &lt;li&gt;Updates to Rails.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;raise-a-big-tent&quot;&gt;Raise a Big Tent&lt;/h2&gt;
+&lt;p&gt;React on Rails is definitely a part of the big tent of Rails. Plus, React on Rails provides its own big tent. A huge benefit of the React on Rails system is simple integration with Webpack and NPM, allowing integration with almost any library available on &lt;a href=&quot;https://www.npmjs.org/&quot;&gt;npm&lt;/a&gt;! The integration with Webpack also allows for other Webpack supported build tools.&lt;/p&gt;
+
+&lt;h2 id=&quot;thanks&quot;&gt;Thanks!&lt;/h2&gt;
+&lt;p&gt;Thanks for reading and being a part of the React on Rails community. Feedback on this document and &lt;em&gt;anything&lt;/em&gt; in React on Rails is welcome. Please &lt;a href=&quot;https://github.com/shakacode/react_on_rails/issues/new&quot;&gt;open an issue&lt;/a&gt; or a pull request. If you’d like to join our private Slack channel, please &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#099;&amp;#111;&amp;#110;&amp;#116;&amp;#097;&amp;#099;&amp;#116;&amp;#064;&amp;#115;&amp;#104;&amp;#097;&amp;#107;&amp;#097;&amp;#099;&amp;#111;&amp;#100;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;email&lt;/a&gt; us a request.&lt;/p&gt;
+
+&lt;div id=&quot;discourse-comments&quot;&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  var discourseUrl = &quot;http://forum.shakacode.com/&quot;,
+      discourseEmbedUrl = &quot;http://www.shakacode.com/2016/01/26/the-react-on-rails-doctrine.html&quot;;
+  (function() {
+    var d = document.createElement(&#39;script&#39;); d.type = &#39;text/javascript&#39;; d.async = true;
+      d.src = discourseUrl + &#39;javascripts/embed.js&#39;;
+    (document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(d);
+  })();
+&lt;/script&gt;
+
+</description>
+        <pubDate>Tue, 26 Jan 2016 21:19:49 -0800</pubDate>
+        <link>http://www.shakacode.com/2016/01/26/the-react-on-rails-doctrine.html</link>
+        <guid isPermaLink="true">http://www.shakacode.com/2016/01/26/the-react-on-rails-doctrine.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Success the ShakaCode Way!</title>
