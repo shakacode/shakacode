@@ -6,8 +6,8 @@
 </description>
     <link>http://www.shakacode.com/</link>
     <atom:link href="http://www.shakacode.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 26 Jan 2016 23:01:18 -0800</pubDate>
-    <lastBuildDate>Tue, 26 Jan 2016 23:01:18 -0800</lastBuildDate>
+    <pubDate>Mon, 01 Feb 2016 13:19:27 -0200</pubDate>
+    <lastBuildDate>Mon, 01 Feb 2016 13:19:27 -0200</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -38,8 +38,9 @@
 &lt;/ol&gt;
 
 &lt;h2 id=&quot;convention-over-configuration&quot;&gt;Convention over Configuration&lt;/h2&gt;
+&lt;p&gt;React on Rails has taken the hard work out of figuring out the JavaScript tooling that works best with Rails. Not only could you spend lots of time researching different tooling, but then you’d have to figure out how to splice it all together. This is where a lot of “JavaScript fatigue” comes from. The following keep the code clean and consistent:&lt;/p&gt;
+
 &lt;ul&gt;
-  &lt;li&gt;React on Rails has taken the hard work out of figuring out the JavaScript tooling that works best with Rails. Not only could you spend lots of time researching different tooling, but then you’d have to figure out how to splice it all together. This is where a lot of “JavaScript fatigue” comes from. The following keep the code clean and consistent:&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;coding-style/style.md&quot;&gt;Style Guide&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;coding-style/linters.md&quot;&gt;linters&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;recommended-project-structure.md&quot;&gt;Recommended Project Structure&lt;/a&gt;&lt;/li&gt;
@@ -103,11 +104,10 @@
 
 &lt;h2 id=&quot;thanks&quot;&gt;Thanks!&lt;/h2&gt;
 &lt;p&gt;Thanks for reading and being a part of the React on Rails community. Feedback on this document and &lt;em&gt;anything&lt;/em&gt; in React on Rails is welcome. Please &lt;a href=&quot;https://github.com/shakacode/react_on_rails/issues/new&quot;&gt;open an issue&lt;/a&gt; or a pull request. If you’d like to join our private Slack channel, please &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#099;&amp;#111;&amp;#110;&amp;#116;&amp;#097;&amp;#099;&amp;#116;&amp;#064;&amp;#115;&amp;#104;&amp;#097;&amp;#107;&amp;#097;&amp;#099;&amp;#111;&amp;#100;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;email&lt;/a&gt; us a request.&lt;/p&gt;
-
 &lt;div id=&quot;discourse-comments&quot;&gt;&lt;/div&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
   var discourseUrl = &quot;http://forum.shakacode.com/&quot;,
-      discourseEmbedUrl = &quot;http://www.shakacode.com/2016/01/26/the-react-on-rails-doctrine.html&quot;;
+      discourseEmbedUrl = &quot;http://www.shakacode.com/2016/01/27/the-react-on-rails-doctrine.html&quot;;
   (function() {
     var d = document.createElement(&#39;script&#39;); d.type = &#39;text/javascript&#39;; d.async = true;
       d.src = discourseUrl + &#39;javascripts/embed.js&#39;;
@@ -116,9 +116,9 @@
 &lt;/script&gt;
 
 </description>
-        <pubDate>Tue, 26 Jan 2016 21:19:49 -0800</pubDate>
-        <link>http://www.shakacode.com/2016/01/26/the-react-on-rails-doctrine.html</link>
-        <guid isPermaLink="true">http://www.shakacode.com/2016/01/26/the-react-on-rails-doctrine.html</guid>
+        <pubDate>Wed, 27 Jan 2016 03:19:49 -0200</pubDate>
+        <link>http://www.shakacode.com/2016/01/27/the-react-on-rails-doctrine.html</link>
+        <guid isPermaLink="true">http://www.shakacode.com/2016/01/27/the-react-on-rails-doctrine.html</guid>
         
         
       </item>
@@ -389,7 +389,7 @@ looking for more ShakaCoders to join us!&lt;/p&gt;
 &lt;/script&gt;
 
 </description>
-        <pubDate>Thu, 26 Nov 2015 14:41:38 -0800</pubDate>
+        <pubDate>Thu, 26 Nov 2015 20:41:38 -0200</pubDate>
         <link>http://www.shakacode.com/2015/11/26/success-the-shakacode-way.html</link>
         <guid isPermaLink="true">http://www.shakacode.com/2015/11/26/success-the-shakacode-way.html</guid>
         
@@ -553,7 +553,7 @@ and exude good feelings to others. (by Megan Denny, www.padi.com)&lt;/p&gt;
 &lt;/script&gt;
 
 </description>
-        <pubDate>Thu, 17 Sep 2015 19:14:15 -0700</pubDate>
+        <pubDate>Thu, 17 Sep 2015 23:14:15 -0300</pubDate>
         <link>http://www.shakacode.com/2015/09/17/who-is-shaka-code.html</link>
         <guid isPermaLink="true">http://www.shakacode.com/2015/09/17/who-is-shaka-code.html</guid>
         
