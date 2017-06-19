@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ShakaCode</title>
+    <description>We build web and mobile applications using React, React-Native, and Ruby on Rails.
+</description>
+    <link>http://www.shakacode.com/</link>
+    <atom:link href="http://www.shakacode.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 19 Jun 2017 15:29:38 -0400</pubDate>
+    <lastBuildDate>Mon, 19 Jun 2017 15:29:38 -0400</lastBuildDate>
+    <generator>Jekyll v2.5.0</generator>
+    
+      <item>
+        <title>The React on Rails Doctrine</title>
+        <description>&lt;p&gt;By Justin Gordon, January 26, 2016&lt;/p&gt;
+
+&lt;p&gt;This document is an extension and complement to &lt;a href=&quot;http://rubyonrails.org/doctrine/&quot;&gt;The Rails Doctrine&lt;/a&gt;. If you haven’t read that document, I suggest you do so first.&lt;/p&gt;
+
+&lt;p&gt;As stated in the &lt;a href=&quot;https://github.com/shakacode/react_on_rails/blob/master/README.md&quot;&gt;React on Rails README&lt;/a&gt;, the project objective is to provide an opinionated and optimal framework for integrating &lt;strong&gt;Ruby on Rails&lt;/strong&gt; with modern JavaScript tooling and libraries. When considering what goes into &lt;strong&gt;react_on_rails&lt;/strong&gt;, we ask ourselves, is the functionality related to the intersection of using Rails and with modern JavaScript? A good example is view helper integration of React components on a Rails view. If the answer is yes, then the functionality belongs right here. In other cases, we’re releasing separate npm packages or Ruby gems. For example, we needed an easy way to integrate &lt;a href=&quot;http://getbootstrap.com/&quot;&gt;Twitter Bootstrap&lt;/a&gt; with Webpack, and we released the &lt;a href=&quot;https://github.com/shakacode/bootstrap-loader/&quot;&gt;npm bootstrap-loader&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Besides the project objective, let’s stick with the “Rails Doctrine” and keep the following in mind.&lt;/p&gt;
+
+&lt;h2 id=&quot;optimize-for-programmer-happiness&quot;&gt;Optimize for Programmer Happiness&lt;/h2&gt;
+&lt;p&gt;The React on Rails setup provides several key components related to front-end developer happiness:&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gaearon.github.io/react-hot-loader/&quot;&gt;Hot reloading of both JavaScript and CSS&lt;/a&gt;, via the &lt;a href=&quot;https://webpack.github.io/docs/webpack-dev-server.html&quot;&gt;webpack dev server&lt;/a&gt;. This works for both using an &lt;a href=&quot;http://expressjs.com/&quot;&gt;express server&lt;/a&gt; to load stubs for the ajax requests, as well as using a live Rails server. &lt;strong&gt;Oh yes&lt;/strong&gt;, your Rails server can do hot reloading!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/css-modules/webpack-demo&quot;&gt;CSS modules&lt;/a&gt; which remove the madness of a global namespace for CSS. We organize our CSS (Sass, actually) right next to our JavaScript React component files. This means no more creating long class names to ensure that CSS picks up the right styles.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://es6-features.org/#Constants&quot;&gt;ES6 JavaScript&lt;/a&gt; is a great language for client side coding, much more so than Ruby due to the asynchronous nature of UI programming.&lt;/li&gt;
+  &lt;li&gt;JavaScript libraries and tooling work better in the native node way, rather than via some aspect of Sprockets and the Rails Asset Pipeline. We find way less frustration this way, especially from being able to get the latest advances with the rest of the JavaScript community. Why complicated beautiful JavaScript tooling Rails asset pipeline complexity?&lt;/li&gt;
+  &lt;li&gt;We want our JavaScript from npm. Getting JavaScript from rubygems.org is comparatively frustrating.&lt;/li&gt;
+  &lt;li&gt;Happiness for us is actively participating in open source, so we want to be where the action is, which is with the npm libraries on github.com.&lt;/li&gt;
+  &lt;li&gt;You can get set up on React on Rails &lt;strong&gt;FAST&lt;/strong&gt; using our application generator.&lt;/li&gt;
+  &lt;li&gt;By placing all client-side development inside of the &lt;code&gt;/client&lt;/code&gt; directory, pure JavaScript developers can productively do development separate from Rails. Instead of Rails APIs, stub APIs on an express server can provide a simple backend, allowing for rapid iteration of UI prototypes.&lt;/li&gt;
+  &lt;li&gt;Just because we’re not relying on the Rails asset pipeline for ES6 conversion does not mean that we’re deploying Rails apps in any different way. We still use the asset pipeline to include our Webpack compiled JavaScript. This only requires a few small modifications, as explained in our doc &lt;a href=&quot;https://github.com/shakacode/react_on_rails/blob/master/docs%2Fadditional-reading%2Fheroku-deployment.md&quot;&gt;Heroku Deployment&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;convention-over-configuration&quot;&gt;Convention over Configuration&lt;/h2&gt;
+&lt;p&gt;React on Rails has taken the hard work out of figuring out the JavaScript tooling that works best with Rails. Not only could you spend lots of time researching different tooling, but then you’d have to figure out how to splice it all together. This is where a lot of “JavaScript fatigue” comes from. The following keep the code clean and consistent:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/shakacode/react_on_rails/blob/master/docs%2Fcoding-style%2Fstyle.md&quot;&gt;Style Guide&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/shakacode/react_on_rails/blob/master/docs%2Fcoding-style%2Fstyle.md&quot;&gt;linters&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/shakacode/react_on_rails/blob/master/docs/additional-reading/recommended-project-structure.md&quot;&gt;Recommended Project Structure&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We’re big believers in this quote from the Rails Doctrine:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The same goes even when you understand how all the pieces go together. When there’s an obvious next step for every change, we can scoot through the many parts of an application that is the same or very similar to all the other applications that went before it. A place for everything and everything in its place. Constraints liberate even the most able minds.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;the-menu-is-omakase&quot;&gt;The Menu Is Omakase&lt;/h2&gt;
+&lt;p&gt;Here’s the chef’s selection from the React on Rails community:&lt;/p&gt;
+
+&lt;h3 id=&quot;libraries&quot;&gt;Libraries&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://getbootstrap.com/&quot;&gt;Bootstrap&lt;/a&gt;, loaded from &lt;a href=&quot;https://github.com/shakacode/bootstrap-loader/&quot;&gt;bootstrap-loader&lt;/a&gt;. Common UI styles.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lodash.com/&quot;&gt;Lodash&lt;/a&gt;: Swiss army knife of utilities.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://facebook.github.io/react/&quot;&gt;React&lt;/a&gt;: UI components.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/reactjs/react-router&quot;&gt;React-Router&lt;/a&gt;: Provider of deep links for client-side application.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/reactjs/redux&quot;&gt;Redux&lt;/a&gt;: Flux implementation (aka “state container”).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;javascript-tooling&quot;&gt;JavaScript Tooling&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://babeljs.io/&quot;&gt;Babel&lt;/a&gt;: Transpiler for ES6 into ES5 and much more.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://eslint.org/&quot;&gt;EsLint&lt;/a&gt; and &lt;a href=&quot;http://jscs.info/&quot;&gt;Jsrc&lt;/a&gt;: JavaScript linters.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://webpack.github.io/&quot;&gt;Webpack&lt;/a&gt;: Generator of deployment assets and provider of hot module reloading.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;By having a common set of tools, we can discuss what we should or shouldn’t be using. Thus, this takes out the “JavaScript Fatigue” from having too many unclear choices in the JavaScript world.&lt;/p&gt;
+
+&lt;p&gt;By the way, we’re &lt;em&gt;not&lt;/em&gt; omakase for standard Rails. That would be CoffeeScript. However, the Rails Doctrine makes it clear that non-standard menu choices are certainly welcome!&lt;/p&gt;
+
+&lt;h2 id=&quot;no-one-paradigm&quot;&gt;No One Paradigm&lt;/h2&gt;
+&lt;p&gt;React on Rails fits into the “No One Paradigm” of the Rails ecosystem from the perspective that it rocks for client side development with Rails, even though it’s a totally different language than the server code written in Ruby.&lt;/p&gt;
+
+&lt;h2 id=&quot;exalt-beautiful-code&quot;&gt;Exalt Beautiful Code&lt;/h2&gt;
+&lt;p&gt;ES5 was ugly. ES6 is beautiful. React is beautiful. Client side code written with React plus Redux, fully linted with the ShakaCode linters, and organized per our recommended project structure is beautiful. Don’t take our word for it. Take a look at the component sample code in the &lt;a href=&quot;https://github.com/shakacode/react-webpack-rails-tutorial/tree/master/client/app/bundles/comments&quot;&gt;react-webpack-rails-tutorial sample code&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;value-integrated-systems&quot;&gt;Value Integrated Systems&lt;/h2&gt;
+&lt;p&gt;Assuming that you’re building the type of app that’s a good fit for Rails (document/database based with lots of business rules), the tight integration of modern JavaScript with React on top of Ruby on Rails is better than building a pure client side app and separate microservices. Here’s why:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Via React on Rails, we can seamlessly integrate React UI components with Rails.&lt;/li&gt;
+  &lt;li&gt;Tight integration allows for trivial set up of server rendering of React on top of Rails, complete with support for fragment caching of the server rendered HTML, and integration with &lt;a href=&quot;https://github.com/turbolinks/turbolinks&quot;&gt;Turbolinks&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Tight integration allows mixing and matching Rails pages with React driven pages, even on the same page. Not every part of a UI requires the high fidelity achievable using React. Many existing apps may have hundreds of standards Rails forms. Support for mixing and matching React with Rails forms provides the best of both worlds.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;progress-over-stability&quot;&gt;Progress over Stability&lt;/h2&gt;
+&lt;p&gt;React on Rails will maintain an active pace of development, to keep up with:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Community suggestions.&lt;/li&gt;
+  &lt;li&gt;New client side tooling, libraries, and techniques.&lt;/li&gt;
+  &lt;li&gt;Updates to Rails.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;raise-a-big-tent&quot;&gt;Raise a Big Tent&lt;/h2&gt;
+&lt;p&gt;React on Rails is definitely a part of the big tent of Rails. Plus, React on Rails provides its own big tent. A huge benefit of the React on Rails system is simple integration with Webpack and NPM, allowing integration with almost any library available on &lt;a href=&quot;https://www.npmjs.org/&quot;&gt;npm&lt;/a&gt;! The integration with Webpack also allows for other Webpack supported build tools.&lt;/p&gt;
+
+&lt;h2 id=&quot;thanks&quot;&gt;Thanks!&lt;/h2&gt;
+&lt;p&gt;Thanks for reading and being a part of the React on Rails community. Feedback on this document and &lt;em&gt;anything&lt;/em&gt; in React on Rails is welcome. Please &lt;a href=&quot;https://github.com/shakacode/react_on_rails/issues/new&quot;&gt;open an issue&lt;/a&gt; or a pull request. If you’d like to join our private Slack channel, please &lt;a href=&quot;mailto:contact@shakacode.com&quot;&gt;email&lt;/a&gt; us a request.&lt;/p&gt;
+&lt;div id=&quot;discourse-comments&quot;&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  var discourseUrl = &quot;http://forum.shakacode.com/&quot;,
+      discourseEmbedUrl = &quot;http://www.shakacode.com/2016/01/27/the-react-on-rails-doctrine.html&quot;;
+  (function() {
+    var d = document.createElement(&#39;script&#39;); d.type = &#39;text/javascript&#39;; d.async = true;
+      d.src = discourseUrl + &#39;javascripts/embed.js&#39;;
+    (document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(d);
+  })();
+&lt;/script&gt;
+
+</description>
+        <pubDate>Wed, 27 Jan 2016 00:19:49 -0500</pubDate>
+        <link>http://www.shakacode.com/2016/01/27/the-react-on-rails-doctrine.html</link>
+        <guid isPermaLink="true">http://www.shakacode.com/2016/01/27/the-react-on-rails-doctrine.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Success the ShakaCode Way!</title>
+        <description>&lt;p&gt;It’s Thanksgiving today! I’m taking a few minutes to put down a few thoughts
+that I hope will bring you, your family, and your friends “success” in the
+coming year.&lt;/p&gt;
+
+&lt;p&gt;Success is ambiguous. Is it
+&lt;a href=&quot;https://medium.com/@dhh/the-day-i-became-a-millionaire-55d7dc4d8293#.80b2anf29&quot;&gt;being a millionaire&lt;/a&gt;?
+Being famous?
+&lt;a href=&quot;https://medium.com/@dhh/i-don-t-want-to-be-a-winner-9858d0c32fa0#.7mwrh5asb&quot;&gt;Winning competitions&lt;/a&gt;?&lt;/p&gt;
+
+&lt;p&gt;I’d say it’s happiness! This image captures &lt;em&gt;part&lt;/em&gt; of my definition of
+success. &lt;a href=&quot;https://www.facebook.com/jimmie.hepp2?fref=ts&quot;&gt;Jimmie Hepp&lt;/a&gt; took
+this picture just a couple days before I wrote this article.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.shakacode.com/assets/posts/2015/11/justin-surfing-offshore-winds-smiling.jpg&quot; alt=&quot;Justin Surfing Smiling&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Note, I said happiness is just a &lt;em&gt;part&lt;/em&gt; of success. Balance in life is key to
+success. While I have the means to spend all my time surfing, I’d find greater
+happiness in striking a balance with my other passion, which is creating great
+software and an organization called “ShakaCode”. ShakaCode is more than just a
+company; it’s a community. A large part of what
+&lt;a href=&quot;http://www.shakacode.com&quot;&gt;ShakaCode&lt;/a&gt; does is giving away &lt;strong&gt;free&lt;/strong&gt; code and
+training to world’s software community, as shown by our
+&lt;a href=&quot;http://www.shakacode.com/opensource/&quot;&gt;open source projects&lt;/a&gt;, our
+&lt;a href=&quot;http://forum.shakacode.com/&quot;&gt;ShakaCode forum&lt;/a&gt;, and my
+&lt;a href=&quot;http://www.railsonmaui.com&quot;&gt;RailsOnMaui blog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;A big part of the DNA of ShakaCode is that we’re
+&lt;strong&gt;&lt;a href=&quot;http://martinfowler.com/articles/remote-or-co-located.html&quot;&gt;remote first&lt;/a&gt;&lt;/strong&gt;.
+This means that &lt;em&gt;you&lt;/em&gt; can be involved with ShakaCode regardless of just about
+any factor other than having a decent computer, good Internet, and a true
+passion to learn and contribute. And if you have family duties, just hate time
+wasted commuting, or want to live at a ski resort or a remote surf break –
+that’s all OK. Educational background, ethnicity, nationality, gender, age, etc.
+all do not matter to us. All of our team members share this philosophy and this
+is how we &lt;a href=&quot;http://www.shakacode.com/about/#work-with-us&quot;&gt;find new team members&lt;/a&gt;.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2 id=&quot;an-inspiring-story&quot;&gt;An Inspiring Story&lt;/h2&gt;
+&lt;p&gt;One of my first hires, Dylan, exemplifies ShakaCode’s values.&lt;/p&gt;
+
+&lt;p&gt;After coming out of high school on Maui, surfing was valued more than anything
+academic. Rather than attending college, Dylan got a job and focused most of his
+energies on fun outdoor activities in Maui such as surfing, kite surfing, and
+mountain biking. Dylan soon discovered his job required a college degree for
+promotion. At community college, Dylan quickly discovered he &lt;strong&gt;LOVED&lt;/strong&gt;
+computers! After college, Dylan pursued a successful career in support and
+management of computer systems and networks.&lt;/p&gt;
+
+&lt;p&gt;However, this did not satisfy Dylan’s insatiable thirst and passion for
+technology. He told me that he could see that much of his job would be automated
+by software, so he had better learn to code!&lt;/p&gt;
+
+&lt;p&gt;Over many years, I’ve offered to share my love for computer programming with
+friends, telling them that it’s the best job ever for a surfer in that you can
+be anywhere in the world and have a productive career. While I’ve had a few
+friends that showed interest, &lt;strong&gt;none&lt;/strong&gt; of them had the &lt;strong&gt;passion&lt;/strong&gt; and
+&lt;strong&gt;desire&lt;/strong&gt; of Dylan.&lt;/p&gt;
+
+&lt;p&gt;Dylan would show up every day at my office and just soak up everything I could
+give him. When he wasn’t in my office, he’d have his iPhone set to technology
+podcasts all day long. Eventually, I tell Dylan to quit his current job, and to
+join me full-time! I can tell you with 100% certainty that this was one of the
+best decisions I’ve ever made!&lt;/p&gt;
+
+&lt;p&gt;Let’s bounce back to the topic of “success the ShakaCode way.” If you can find
+some passion of yours that you can contribute to the world, and you can balance
+that with a healthy lifestyle, that is success. However, like replicating
+startup company success, this might seem inaccessible, especially to those that
+are not computer fanatics like the ShakaCode team.&lt;/p&gt;
+
+&lt;h2 id=&quot;winning-competition-is-not-success&quot;&gt;(Winning) Competition Is Not Success&lt;/h2&gt;
+
+&lt;p&gt;Americans love competition. It’s everywhere: in sports, in business, and in
+academics. We cherish the winners and berate the losers. And this mentality is
+counterproductive to success in your career and overall happiness! In the last
+few months, a couple heroes of mine, David Heinemeier Hanson and Laird Hamilton,
+have shared their perspectives on competition. Their advice correlates with my
+view that &lt;em&gt;collaboration and creativity&lt;/em&gt; will do more for your success than a
+stressful focus on competition.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.shakacode.com/assets/posts/2015/11/lemans2013.jpg&quot; alt=&quot;David Racing&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To quote &lt;a href=&quot;http://david.heinemeierhansson.com/&quot;&gt;David Heinemeier Hanson&lt;/a&gt; in
+&lt;a href=&quot;https://signalvnoise.com/posts/3977-i-dont-want-to-be-a-winner&quot;&gt;I don’t want to be a winner&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Is there anything our society exalts more than The Winner? That fiery someone
+who crushes all competition to stand alone and victorious at the end. A
+genetic predisposition, I’m sure.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The paradigm of competition is so ingrained as the basic business narrative
+that we usually don’t even recognize it, much less question it. Well, of
+course there are winners and losers! What are you, a f&lt;strong&gt;**&lt;/strong&gt; communist?!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Instead of focusing on “winning,” focus on creativity, collaboration, and
+giving. If your definition of “winning” &lt;em&gt;is&lt;/em&gt; “happiness” and possibly material
+riches, then the path is not by &lt;em&gt;defeating&lt;/em&gt; others, but, instead, by &lt;em&gt;helping&lt;/em&gt;
+others! While I cannot speak to every industry, in the world of open source
+software, based on my experience, helping others is definitely the path to
+success!&lt;/p&gt;
+
+&lt;p&gt;While this topic applies to individuals, as well as businesses, it’s &lt;strong&gt;probably
+most important for our youth&lt;/strong&gt; and their hyper-competitive parents. The
+importance of winning, sadly, starts off early for most youngsters. On the
+playground, kids play sports to “win”. Have you ever seen hyper-competitive
+little league parents? “If you’re not a winner, then you’re a &lt;strong&gt;LOSER&lt;/strong&gt;!&lt;/p&gt;
+
+&lt;p&gt;In high school, you have to beat your peers to get the best grades, and then
+have to beat them on college entrance exams to get into the right university.
+Winning jocks are idolized. This continues into college, where you have to
+compete for grades, jobs, and seemingly just about anything.&lt;/p&gt;
+
+&lt;p&gt;This recent, detailed article,
+&lt;a href=&quot;http://www.theatlantic.com/magazine/archive/2015/12/the-silicon-valley-suicides/413140/&quot;&gt;The Silicon Valley Suicides: Why are so many kids with bright prospects killing themselves in Palo Alto?&lt;/a&gt;,
+highlights dangers of hyper-competitive parenting. Here’s a quote that describes
+the pressure at these high achieving high schools:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Heavy stress among “good kids” was the product of “a nasty competitive
+atmosphere contrived by unethical Tiger Mothers,” one commenter wrote. At the
+end of some of my conversations, a student, teacher, or counselor would look
+around to make sure no one was listening and then whisper a story about an
+Asian kid being punished or even kicked out of the house for a night after
+getting a B or failing to get into Stanford.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;A Palo Alto student, Carolyn Walworth, gave the youth perspective:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“A piece of you cringes when you hear that your friend has been preparing for
+the SAT with classes since last summer, and that they’re already scoring a
+2000, (And what about … the girl taking a summer immersion program to skip ahead and
+get into AP French her sophomore year? And that internship your best friend
+has with a Stanford professor?) You can’t help but slip into the system of
+competitive insanity … We are not teenagers. We are lifeless bodies in a
+system that breeds competition, hatred, and discourages teamwork and genuine
+learning. We lack sincere passion. We are sick … Why is that not getting
+through to this community? Why does this insanity that is our school district
+continue?”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The college grad may then go into corporate America and learn the meaning of
+“Stack Ranking”, as portrayed
+&lt;a href=&quot;http://qz.com/320532/marissa-mayers-yahoo-is-a-case-study-in-the-toxic-nature-of-stack-ranking/&quot;&gt;at Yahoo&lt;/a&gt;.
+I’ve personally worked for a company where the managers of a division could only
+award a single “1” performance ranking, regardless of how many excellent
+achievers were in the group. At the same time, these managers were forced to
+award “3’s”. “1” means amazing, and “3” means you’re being given a “performance
+plan”, which really means “we’re firing you and we don’t want you to sue us.”
+It’s probably not surprising that this same stack-ranking company also deterred
+open source contributions. At this company, contributing to any open source
+project without 3 levels of management approval was grounds for firing! &lt;em&gt;Tip:
+don’t work for such companies.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;compete-against-yourself-only&quot;&gt;Compete Against Yourself Only&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.shakacode.com/assets/posts/2015/11/Laird_Hamilton_Teahupoo_2000.jpg&quot; alt=&quot;Laird Competing Against Himself&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Laird_Hamilton&quot;&gt;Laird&lt;/a&gt; is as much a legend in the
+surfing world as David is in the programming and startup worlds. He could have
+competed in professional surfing. Instead, he chose to forge his own path,
+rather than being bound by the judging standards of competitive surfing. In a
+recent interview in the
+&lt;a href=&quot;http://www.huffingtonpost.com/entry/laird-hamilton-competition_55d4fe27e4b055a6dab2d7b5&quot;&gt;Huffington Post&lt;/a&gt;,
+he stated:&lt;/p&gt;
+
+&lt;p&gt;While Laird is all about surfing, his comments also apply to the world of &lt;strong&gt;open
+source collaboration&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“A creative man is fulfilled by accomplishments and a competitive man is
+fulfilled by beating others,” Hamilton said, paraphrasing an old saying. He
+continued, “I’m all about accomplishments. Ride the biggest wave. It has to do
+with me. I can always grow and keep accomplishing things.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This insistence on competing only with himself is a survival mechanism of
+sorts – or an almost spiritual life philosophy. “I wanted to be in control. I
+wanted to be the one determining if I felt fulfilled or not,” Hamilton said.
+&lt;a href=&quot;http://www.huffingtonpost.com/entry/laird-hamilton-competition_55d4fe27e4b055a6dab2d7b5&quot;&gt;Source: Huffington Post&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;While Laird and Justin surf, David races cars:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The only competition I’ve come to love is the one against myself, and that’s
+not really a competition, now is it? The progress of betterment. Playing your
+part to the best of your abilities in a beautiful whole.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;That’s the joy I take away from racing cars for endurance. It’s not so much
+being faster than the other cars, but striving to perfect your own
+contribution as part of a team. Pushing against the limits of perfect
+execution over the long term. 24 hours of testing your capability to avoid
+mistake and fatigue. Winning is almost incidental to that.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For me, the joy of surfing is to compete with myself. The primary goal is to
+become &lt;strong&gt;connected to the energy of the ocean&lt;/strong&gt;. It challenges you both at the
+physical and mental levels, as you need strength and agility to ride waves. It
+also challenges your judgment. Can you predict where the next wave will break?
+Are you the surfer best positioned for the next wave? What I love the most about
+surfing is the feeling that the learning process never ends. This combination of
+applying strength and skill also applies to other outdoor action sports such as snow
+boarding, mountain biking, kite-surfing, windsurfing, paddling, etc. For myself
+and many others, healthy outdoor exercise fosters great creativity at work.&lt;/p&gt;
+
+&lt;h2 id=&quot;success-the-shakacode-way&quot;&gt;Success the ShakaCode Way&lt;/h2&gt;
+&lt;p&gt;What works for Laird, David, and me, regarding happiness, is to focus on
+&lt;strong&gt;creative expression&lt;/strong&gt;, be it in the waves, in writing, in software, or
+wherever your passion lies. Forget about competition and beating others.
+Instead, focus on what you can do to help and inspire others! We have to
+focus on making bigger pies, and not getting just larger slices of a fixed pie,
+as in “winners” and “losers.” Open source is all about this “grow the pie
+collaboration,” in sharp contrast to the litigation brought on by patents and
+copyrights.&lt;/p&gt;
+
+&lt;p&gt;At ShakaCode, there’s no good or bad or code. Through constant collaboration and
+peer review, without fears of criticism or “looking dumb,” we as a team deliver
+the best possible product, and we all improve our skills on a daily basis.
+Everything we do is based on open source, and we’re doing our best to make
+meaningful contributions to the community, such as our new Ruby Gem,
+&lt;a href=&quot;https://github.com/shakacode/react_on_rails&quot;&gt;react_on_rails&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Our hiring reflects our philosophy. We don’t torture job candidates with
+programming stress tests. Instead, we try to work with them on open source just
+as we would after they are hired. This fits into our &lt;strong&gt;remote first&lt;/strong&gt;
+philosophy. Basically, if you can contribute meaningfully to open source in the
+Ruby and JavaScript worlds, then you’ll fit right in with us, regardless of
+where you’re located or whether or not you can solve humiliating programming
+puzzles in record time. We don’t monitor our team members. Instead we trust them
+to make the right decisions and to act with integrity.&lt;/p&gt;
+
+&lt;p&gt;By the way, at ShakaCode, we’re thrilled our team members have hobbies like
+surfing to complement the intellectual vigor of writing code. Our business is a
+marathon, not a sprint, and a healthy, long-term perspective is best for our
+team, our clients, and our products. And a flexible, remote-first work
+environment is conducive to allowing our team members to live well balanced and
+productive lives.&lt;/p&gt;
+
+&lt;p&gt;For a more detailed perspective on the &lt;a href=&quot;http://www.shakacode.com/&quot;&gt;ShakaCode’s&lt;/a&gt;
+philosophy, see &lt;a href=&quot;/2015/09/17/who-is-shaka-code.html&quot;&gt;Who Is ShakaCode?&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If this article resonates with you, please don’t hesitate to
+&lt;a href=&quot;mailto:contact@shakacode.com&quot;&gt;get in touch&lt;/a&gt;! Or comment! We’re currently
+looking for more ShakaCoders to join us!&lt;/p&gt;
+&lt;div id=&quot;discourse-comments&quot;&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  var discourseUrl = &quot;http://forum.shakacode.com/&quot;,
+      discourseEmbedUrl = &quot;http://www.shakacode.com/2015/11/26/success-the-shakacode-way.html&quot;;
+  (function() {
+    var d = document.createElement(&#39;script&#39;); d.type = &#39;text/javascript&#39;; d.async = true;
+      d.src = discourseUrl + &#39;javascripts/embed.js&#39;;
+    (document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(d);
+  })();
+&lt;/script&gt;
+
+</description>
+        <pubDate>Thu, 26 Nov 2015 17:41:38 -0500</pubDate>
+        <link>http://www.shakacode.com/2015/11/26/success-the-shakacode-way.html</link>
+        <guid isPermaLink="true">http://www.shakacode.com/2015/11/26/success-the-shakacode-way.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Who Is ShakaCode?</title>
+        <description>&lt;p class=&quot;text-center&quot;&gt;&lt;img src=&quot;http://www.shakacode.com/assets/posts/2015/09/shaka-sign.png&quot; alt=&quot;Shaka Sign&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This gesture is more than just a mere wave or thumbs up. The shaka is a symbol
+of the “Aloha spirit,” which is the coordination of the mind and spirit to think
+and exude good feelings to others. (by Megan Denny, www.padi.com)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;by Justin Gordon with help from the ShakaCode Team, September, 2015&lt;/p&gt;
+
+&lt;h2 id=&quot;a-classoffset-y-anchor-namewho-is-shaka-codea-who-is-shakacode&quot;&gt;&lt;a class=&quot;offset-y-anchor&quot; name=&quot;who-is-shaka-code&quot;&gt;&lt;/a&gt; Who is ShakaCode?&lt;/h2&gt;
+
+&lt;p&gt;It’s the global web development software consultancy and product company started by Justin Gordon, AKA “railsonmaui” in the Ruby on Rails world. We’re focused on what we believe to be the best technologies for web development. Today, those are Ruby on Rails and React. But it’s not just us, we like to think that it’s the larger WE in the open source community that loves collaborating on beautiful code.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2 id=&quot;why-change-the-name-from-rails-on-maui&quot;&gt;Why Change the Name from “Rails on Maui?”&lt;/h2&gt;
+
+&lt;p&gt;We’re &lt;strong&gt;polyglots&lt;/strong&gt; and we’re not just based in Maui. When Justin Gordon started out, he was focused on just Ruby on Rails, and “Rails On Maui” was the name he used for his Twitter handle and blog.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-shakacode&quot;&gt;Why “ShakaCode”?&lt;/h2&gt;
+
+&lt;p&gt;The “shaka” is really the embodiment of the philosophy, culture, and team behind ShakaCode as well as our community of open source collaborators. In order to fully explain this, we’ll need to tell you a bit about the meaning of the “shaka symbol” as well as a lot more about us. Let’s first summarize the key points:&lt;/p&gt;
+
+&lt;p&gt;We love open source collaboration (the friendliness of the Shaka meaning) and we love to code. These go hand in hand. We love code so much that we want to share it! And we only want team members that love it as much as us. With a team that loves to code, we don’t need to be handcuffed to an office. We need a good computer and a decent Internet connection anywhere in the world. The company was born in Hawaii, and all early company employees love surfing and tropical beach culture. Sunshine and surf perfectly balances intensely passionate coding!&lt;/p&gt;
+
+&lt;p&gt;Read more if you’d like the details. Or go surfing! Or skiing, mountain biking, etc.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-shakacode-philosophy&quot;&gt;The ShakaCode Philosophy&lt;/h2&gt;
+
+&lt;p&gt;Here’s a bit more about us:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;We’re passionate about what we do and we all love to write and read code. Because we’re 100% remote, we can only hire team members that love code. Jeff Atwood put this well in his article &lt;a href=&quot;http://blog.codinghorror.com/on-working-remotely/&quot;&gt;On Working Remotely&lt;/a&gt;. “But the minimum bar to work remotely is “to find someone who loves code as much as you do”. It’s … enough.”&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;We love open source and helping others. There’s probably no movement that’s changed software in the past 10 years like open source. Open source is not just about creating some well known project, like Linux or Ruby on Rails. It’s about doing what you can in a system of freely sharing ideas and helping others. This might be writing blog articles, participating on Stack Overflow,or working on open source projects. We believe this open source philosophy complements the definition from Wikipedia of the shaka symbol: “Aloha Spirit”, a concept of friendship, understanding, compassion”&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;We almost all surf, and we all love to get outdoors and do fun, athletic things. In fact, Dylan met Justin from surfing in Maui, and Justin contacted Alex when he saw that his Facebook profile page featured a picture of him in Bali. Samnang does huge mountain bike rides around Cambodia. We want to structure our lives to pursue our passions, which is coding and doing fun sports like surfing. This is akin to how &lt;a href=&quot;https://vimeo.com/76063825&quot;&gt;37signals Works Remotely&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Part of loving code is viewing it as an art. It’s like creative writing. When you first see really beautiful code, what is it that you see that is special? It’s a bit like looking at a random page of an Ernest Hemingway novel and seeing clear, short sentences. Great software is written such that it’s simple and clear. It’s easy to read.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Beautiful code is similar to beautiful prose: Succinct, it has flow and rhythm, and it’s an expression of clear thinking that doesn’t jump around different layers of abstraction all the time.” from the article &lt;a href=&quot;https://www.simple-talk.com/opinion/geek-of-the-week/david-heinemeier-hansson-geek-of-the-week/&quot;&gt;David Heinemeier Hansson: Geek of the Week&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;DHH’s &lt;a href=&quot;https://www.youtube.com/watch?v=9LfmrkyP81M&quot;&gt;RailsConf 2014 keynote on “Writing Software”&lt;/a&gt; nicely summarizes this philosophy.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.dish.com/dig/sports/why-one-of-the-best-athletes-in-the-world-refuses-to-compete/&quot;&gt;Thus, Shaka + Code embodies who we are!&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;is-shakacode-a-service-or-product-company&quot;&gt;Is ShakaCode a Service or Product Company?&lt;/h2&gt;
+
+&lt;p&gt;We’re both, and we’re open source contributors! Our company role model is 37Signals. They started off as a web development shop. Out of their work, they developed the program &lt;a href=&quot;http://basecamp.com/&quot;&gt;“Base Camp”&lt;/a&gt; to address their own needs for more organized and effective client interaction. From that work, they extracted &lt;a href=&quot;http://rubyonrails.org/&quot;&gt;Ruby on Rails&lt;/a&gt;, undoubtedly one of the most successful application frameworks ever created.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-is-it-important-for-us-to-have-an-internal-project&quot;&gt;Why is it important for us to have an internal project?&lt;/h2&gt;
+
+&lt;p&gt;Our ultimate mission is to maximize our creative contributions. This includes:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Helping our clients achieve their goals through well-written software.&lt;/li&gt;
+  &lt;li&gt;Building a useful product.&lt;/li&gt;
+  &lt;li&gt;Contributing to open source, including source code and articles.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Goal #2, building a product, is a critical component for several reasons:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;We can experiment with the latest technologies, such as &lt;a href=&quot;http://facebook.github.io/react/&quot;&gt;React&lt;/a&gt;, projects of &lt;a href=&quot;https://github.com/rackt&quot;&gt;rackt&lt;/a&gt;, including &lt;a href=&quot;https://github.com/rackt/redux&quot;&gt;redux&lt;/a&gt; and &lt;a href=&quot;https://github.com/rackt/react-router&quot;&gt;react-router&lt;/a&gt;. Our clients often don’t want experimentation with the latest technologies. An internal project allows us to gain the expertise needed in order to conservatively apply such new technologies for our clients.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;We can work on the latest, often beta version of software. It’s almost impossible to contribute meaningfully to open source when you’re working on ancient versions of open source. Almost all the action and collaboration is happening on the leading edge, as it should be.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;We have a training ground for introducing team members into the ShakaCode style of development. We can interview prospective team members by pairing with them on open source. We can hire junior level engineers who are not ready to be placed in front of clients, and groom them into senior engineers.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Our internal project epitomizes how want our client code to look. It’s sparkly, shiny, and fresh. It’s how we believe code should be written and how projects should be organized. It’s a living example of what we intend to do for our clients. There’s no better “training” or “documentation” than a living example of a real software project.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a name=&quot;fng-internal-project&quot;&gt;&lt;/a&gt; It’s fun to have our own project! Coding is our passion!&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;We intend to give back TONS to the open source community. And that requires “Extraction” rather than “Design” by itself. &lt;a href=&quot;http://rubyonrails.org/&quot;&gt;Ruby on Rails&lt;/a&gt; was an extraction of the 37Signals App, &lt;a href=&quot;https://basecamp.com/&quot;&gt;Basecamp&lt;/a&gt;, and &lt;a href=&quot;http://getbootstrap.com/&quot;&gt;Twitter Bootstrap&lt;/a&gt; was an extract of the UI framework used by Twitter. This article &lt;a href=&quot;http://littlehart.net/atthekeyboard/2007/08/14/extraction-vs-design/&quot;&gt;Extraction vs. Design&lt;/a&gt; nicely sums this up:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;David Heinemeier Hansson (the driving force behind Ruby on Rails) is a huge believer in using extractions as a method to add functionality to your projects, typically in the context of a framework. You need some particular functionality, you write it, and if it’s good enough you extract it from it’s original context and make it generic enough that it can be used by other people. You could also call this “building stuff you need” instead of “building stuff you think you might need”. It’s part of the whole YAGNI philosophy of programming, I guess.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;our-internal-project-friends-and-guests&quot;&gt;Our Internal Project: Friends and Guests&lt;/h2&gt;
+
+&lt;p&gt;This application solves the problem of “I’ve got a vacation home that I want to share with my friends, but not with the general public. What’s the best way to do that?” It’s based on our experiences sharing &lt;a href=&quot;https://www.flickr.com/photos/justingordon/sets/72157622506575437/show/?rb=1&quot;&gt;Sugar Ranch Maui&lt;/a&gt; with our friends and with long-term tenants. One such long-term tenant was Beau Hartshorne, a YC and Facebook alum, who also expressed a need to share his places with his friends, and not the general public. It turns out that many of our friends on Maui have a similar need, as Hawaiians typically have space for family and friends to visit. Thus, “Friends and Guests” is designed to scratch the itch of our friends. It’s not about “what we can build to make the most money”. It’s about, “what we can build to enrich the lives of our friends”.&lt;/p&gt;
+
+&lt;p&gt;We believe that the part of the enjoyment of a vacation home is to share it with your friends. To that ends, we’ll be part of the means with the “Friends and Guests” application.&lt;/p&gt;
+
+&lt;h2 id=&quot;anti-discrimination-policy&quot;&gt;Anti Discrimination Policy&lt;/h2&gt;
+
+&lt;p&gt;Part of ShakaCode is that we don’t discriminate on:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Geography&lt;/strong&gt; and &lt;strong&gt;Time Zone&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;All the normal stuff, like gender, race, age, tattoos, piercings, sexual preference, etc.&lt;/li&gt;
+  &lt;li&gt;Degrees and credentials. Justin has degrees from Harvard, UC Berkeley, as well as a &lt;a href=&quot;https://www.cfainstitute.org/programs/cfaprogram/Pages/index.aspx?WPID=Programs&amp;amp;PageName=Homepage&quot;&gt;CFA credential&lt;/a&gt;. However, based on his experience working with great software engineers, education is only one of many signals. In fact, education is less important than passion and great taste.&lt;/li&gt;
+  &lt;li&gt;Working remotely (that’s what we do!).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;We do discriminate against:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;People that discriminate on the above.&lt;/li&gt;
+  &lt;li&gt;People that view writing software as a job, and not as an enjoyable creative endeavor. Passion is critical.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;influences&quot;&gt;Influences&lt;/h2&gt;
+
+&lt;p&gt;Here’s some of our favorite influences:&lt;/p&gt;
+
+&lt;h3 id=&quot;signals&quot;&gt;37 Signals&lt;/h3&gt;
+
+&lt;p&gt;Definitely listen to this interview of &lt;a href=&quot;http://5by5.tv/changelog/145&quot;&gt;David Heinemeier Hanson on The Changelog&lt;/a&gt; for some great thoughts on the influence of David and Ruby on Rails on the ShakaCode philosophy. Plus, see this article: &lt;a href=&quot;https://www.simple-talk.com/opinion/geek-of-the-week/david-heinemeier-hansson-geek-of-the-week/&quot;&gt;David Heinemeier Hansson: Geek of the Week&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;coding-horror&quot;&gt;Coding Horror&lt;/h3&gt;
+
+&lt;p&gt;Justin still remembers reading &lt;a href=&quot;http://blog.codinghorror.com/about-me/&quot;&gt;Jeff Atwood’s&lt;/a&gt; book where he describe how creating a programming blog was the best thing he ever did, and how it led to &lt;a href=&quot;http://stackoverflow.com/&quot;&gt;Stack Overflow&lt;/a&gt; and now &lt;a href=&quot;http://www.discourse.org/&quot;&gt;discourse.org&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;aloha&quot;&gt;Aloha&lt;/h2&gt;
+
+&lt;p&gt;As Jeff Atwood said on &lt;a href=&quot;http://blog.codinghorror.com/on-the-meaning-of-coding-horror/&quot;&gt;“On The Meaning of “Coding Horror”&lt;/a&gt; (why he blogs):&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;But that’s not the complete story. I’d be lying if I didn’t admit that there’s an element of selfishness at work here. I love computers and programming. I love it so much it borders on obsession. When I saw the movie Into The Wild, I was transfixed by the final note written into the margins of Dr. Zhivago by a doomed Christopher McCandless: “Happiness only real when shared.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.shakacode.com/assets/posts/2015/09/fanpage-header.jpg&quot; alt=&quot;Justin Surfing&quot; /&gt;&lt;/p&gt;
+&lt;div id=&quot;discourse-comments&quot;&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  var discourseUrl = &quot;http://forum.shakacode.com/&quot;,
+      discourseEmbedUrl = &quot;http://www.shakacode.com/2015/09/17/who-is-shaka-code.html&quot;;
+  (function() {
+    var d = document.createElement(&#39;script&#39;); d.type = &#39;text/javascript&#39;; d.async = true;
+      d.src = discourseUrl + &#39;javascripts/embed.js&#39;;
+    (document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(d);
+  })();
+&lt;/script&gt;
+
+</description>
+        <pubDate>Thu, 17 Sep 2015 22:14:15 -0400</pubDate>
+        <link>http://www.shakacode.com/2015/09/17/who-is-shaka-code.html</link>
+        <guid isPermaLink="true">http://www.shakacode.com/2015/09/17/who-is-shaka-code.html</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
