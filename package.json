@@ -1,0 +1,34 @@
+{
+  "name": "shakacode",
+  "version": "1.0.0",
+  "description": "Official ShakaCode package index and verified links.",
+  "license": "MIT",
+  "homepage": "https://github.com/shakacode/shakacode#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shakacode/shakacode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shakacode/shakacode/issues"
+  },
+  "bin": {
+    "shakacode": "bin/shakacode.js"
+  },
+  "files": [
+    "bin/",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "shakacode",
+    "react-on-rails",
+    "shakapacker"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test"
+  }
+}
+
